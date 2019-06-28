@@ -4,6 +4,6 @@
    - name: httpd Package Installation
      yum: name=httpd status=present
    - name: Web Configurations
-     copy: src=./index.html dest=/var/www/html/
+     copy: src=./index.html dest=/var/www/html/index.html
    - name: To start httpd services
      service: name=httpd state=started enabled=yes
